@@ -10,12 +10,13 @@ namespace List_Practice_01
     {
         private string patente;
         private string marca;
-        public List<string> cosas;
+        public int modelo;
 
-        public Auto(string patente, string marca)
+        public Auto(string patente, string marca, int modelo)
         {
             this.patente = patente;
             this.marca = marca;
+            this.modelo = modelo;
         }
     }
 }
