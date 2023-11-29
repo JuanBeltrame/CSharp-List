@@ -1,5 +1,7 @@
 ﻿using List_Practice_02;
 using System.Drawing;
+using System.Collections.Generic;
+
 
 internal class Program
 {
