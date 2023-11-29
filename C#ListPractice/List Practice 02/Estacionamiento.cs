@@ -14,6 +14,7 @@ namespace List_Practice_02
 
         public Estacionamiento(int capacidad)
         {
+            listaAutos = new List<Auto>();
             this.capacidadEstacionamiento = capacidad;
         }
 
@@ -23,7 +24,7 @@ namespace List_Practice_02
 
         public string IngresarAuto(Auto auxAuto)
         {
-            if (capacidadEstacionamiento >= listaAutos.Count())
+            if (capacidadEstacionamiento <= listaAutos.Count())
             {
                 return "Error, Estacionamiento Completo";
             }
@@ -32,6 +33,22 @@ namespace List_Practice_02
                 listaAutos.Add(auxAuto);
                 return "Auto agregado";
             }
+        }
+
+        public string ObtenerInformacionEstacionamiento()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Info del estacinamiento");
+
+            for (int i = 0 ; i < listaAutos.Count; i++)
+            {
+                sb.AppendLine("Auto Numero" + (i + 1));
+                sb.AppendLine("Patente: " + listaAutos[i].patente);
+                sb.AppendLine("Color: " + listaAutos[i].color);
+                sb.AppendLine("DNI Duenio: " + listaAutos[i].dniDuenio);
+                sb.AppendLine(" ");
+            }
+            return sb.ToString();
         }
     }
 }
