@@ -6,6 +6,7 @@ internal class Program
     private static void Main(string[] args)
     {
         //-------------Lista usando OBJETOS -------------------------------------------------
+        // Todas las listas son objetos y hay que instanciarlas
         List<Auto> garage = new List<Auto>();
 
         Auto auto1 = new Auto("12345", "Fiat", 2005);
