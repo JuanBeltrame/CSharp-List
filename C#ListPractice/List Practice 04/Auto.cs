@@ -23,8 +23,7 @@ namespace List_Practice_04
             cantKm = cantidadKilometros;
         }
 
-
-        public string DevolverInformacionDelAuto()
+        public string GetCarInfo()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Informacion del Auto dentro del Garage");
@@ -35,9 +34,5 @@ namespace List_Practice_04
 
             return sb.ToString();
         }
-
-
-
-
     }
 }

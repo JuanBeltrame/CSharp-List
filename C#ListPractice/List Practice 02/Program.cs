@@ -21,7 +21,7 @@ internal class Program
         unEstacionamiento.IngresarAuto(a3);
         unEstacionamiento.IngresarAuto(a4);
 
-        string informacion = unEstacionamiento.ObtenerInformacionEstacionamiento();
+        string informacion = unEstacionamiento.GetParkinInfo();
         Console.WriteLine(informacion);
     }
 }

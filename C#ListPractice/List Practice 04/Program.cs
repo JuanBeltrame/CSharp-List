@@ -46,17 +46,62 @@ List<Auto> garageDeAlejandra = new List<Auto>(10);
 
 //-----------------------------------------------------------------------------------------------
 Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine("GARAGE DE ROMAN");
+Console.WriteLine("BIENVENIDO - GARAGE DE ROMAN");
 
-Console.Write("La cantidad de autos que hay en el garage de ROMAN es: "+ garageDeRoman.Count);
+Console.Write("La cantidad de autos que hay en el garage de ROMAN es: " + garageDeRoman.Count);
 Console.WriteLine();
 
 Console.WriteLine();
 Console.WriteLine();
 foreach (var item in garageDeRoman)
 {
-    Console.WriteLine(item.DevolverInformacionDelAuto());
+    Console.WriteLine(item.GetCarInfo());
 }
 
-garageDeRoman.Contains(garageDeRoman[0]);
+if (garageDeRoman.Contains(garageDeRoman[0]))
+{
+    Console.WriteLine("El auto de la cochera 0, se encuentra estacionado");
+}
 
+if (garageDeRoman.ElementAt(0) != null)
+{
+    Console.WriteLine("El elemento en la posicion 0 no es null, ");
+
+}
+else
+{
+    Console.WriteLine("El elemento es null");
+}
+
+int capacidaActual = garageDeRoman.Capacity;
+Console.WriteLine("La capacidad ocupada del garage actualmente es: " + capacidaActual);
+
+
+//-----------------------------------------------------------------------------------------------
+Console.ForegroundColor = ConsoleColor.Red;
+Console.WriteLine("BIENVENIDO - GARAGE DE PEPE");
+
+Auto a0 = new Auto(2012, 123459, Color.Aqua, 1000M);
+Auto a1 = new Auto(2012, 123459, Color.Aqua, 1000M);
+Auto a2 = new Auto(2012, 123459, Color.Aqua, 1000M);
+Auto a3 = new Auto(2012, 123459, Color.Aqua, 1000M);
+Auto a4 = new Auto(2012, 123459, Color.Aqua, 1000M);
+
+void IngresarAuto()
+{
+    garageDePepe.Add(a0);
+    garageDePepe.Add(a1);
+    garageDePepe.Add(a2);
+    garageDePepe.Add(a3);
+    garageDePepe.Add(a4);
+}
+
+void RemoverTodosLosAutos()
+{
+    garageDePepe.RemoveRange(0, garageDePepe.Count);
+}
+
+void OtraFormaDeRemoverTodosLosAutos()
+{
+    garageDePepe.Clear();
+}

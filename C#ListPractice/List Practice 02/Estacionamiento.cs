@@ -35,7 +35,7 @@ namespace List_Practice_02
             }
         }
 
-        public string ObtenerInformacionEstacionamiento()
+        public string GetParkinInfo()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Info del estacinamiento");
