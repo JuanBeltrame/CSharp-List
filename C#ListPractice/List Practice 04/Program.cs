@@ -2,27 +2,30 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text.RegularExpressions;
+// Las Colecciones en C# son objetos, por lo tanto ademas, son tipos de referencia
 
-// Declaración e inicialización en una sola línea:
-List<int> numeros = new List<int> { 1, 2, 3, 4, 5 };
-
-// Declaración e inicialización sin valores iniciales:
+// Forma 1: Declaracion y asignacion en una Linea sin valores iniciales
 List<string> nombres = new List<string>();
 
-// Declaración e inicialización utilizando el constructor:
-List<double> precios = new List<double>(new double[] { 10.5, 20.3, 15.2 });
+// Forma 2: Declaración y asignación en una línea sin valores iniciales con capacidad inicial especificada
+List<bool> banderas = new List<bool>(10);
 
-// Declaración sin inicialización:
+// Forma 3: Declaración e inicialización en una sola línea con elementos
+List<int> numeros = new List<int> { 1, 2, 3, 4, 5 };
+
+// Forma 4: Declaracion y asignacion en varias Lineas
 List<char> letras;
 letras = new List<char>();
 
-// Declaración con capacidad inicial especificada:
-List<bool> banderas = new List<bool>(10);
-
-
 //-----------------------------------------------------------------------------------------------
 
-// Declarar Objetos // En una sola Linea
+// Forma 1: Declarar Objetos // Declaracion y asignacion en una Linea sin valores iniciales
+List<Auto> garageDePepe = new List<Auto>();
+
+// Forma 2: Declarar Objetos // Declaración y asignación en una línea sin valores iniciales con capacidad inicial especificada
+List<Auto> garageDeAlejandra = new List<Auto>(10);
+
+// Forma 3 Declarar Objetos // Declaración e inicialización en una sola línea con elementos
 List<Auto> garageDeRoman = new List<Auto>
 {
     new Auto(2012, 123459, Color.Aqua, 1000M),
@@ -31,17 +34,9 @@ List<Auto> garageDeRoman = new List<Auto>
     // Puedes seguir agregando más objetos Auto aquí si es necesario
 };
 
-// Declarar Objetos // Declaración e inicialización sin valores iniciales:
-List<Auto> garageDePepe = new List<Auto>();
-
-
-// Declarar Objetos // Declaración sin inicialización:
+// Forma 4: Declarar Objetos // Declaracion y asignacion en varias Lineas
 List<Auto> garageDeLucia;
 garageDeLucia = new List<Auto>();
-
-
-// Declarar Objetos // Declaración con capacidad inicial especificada:
-List<Auto> garageDeAlejandra = new List<Auto>(10);
 
 
 //-----------------------------------------------------------------------------------------------
