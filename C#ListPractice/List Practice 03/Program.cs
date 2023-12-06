@@ -11,11 +11,15 @@ edades.Add(4);
 
 // Otra forma es, la siguiente, y se pueden realizar por que las listas estan indexadas.
 edades[0] = 100;
+
+// Metodo Insert
 edades.Insert(1, -5);
 
+// Propiedad Count
 Console.WriteLine("Cantidad de Elementos");
 Console.WriteLine(edades.Count);
 
+// Metodo IndexOf
 Console.WriteLine("La posicion del -5 es: " + edades.IndexOf(-5));
 
 Console.WriteLine(  );
@@ -39,6 +43,8 @@ foreach (var item in edades)
 {
     Console.WriteLine(item);
 }
+
+
 
 
 

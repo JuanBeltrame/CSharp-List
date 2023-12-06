@@ -22,7 +22,7 @@ internal class Program
         Console.WriteLine("Muestro los autos sin ningun criterio de ordenamiento");
         foreach (var item in garage)
         {
-            Console.WriteLine(item);
+            Console.WriteLine(item.GetCarInfo());
         }
 
         static int CompararObjetos(Auto a, Auto b)
@@ -34,7 +34,7 @@ internal class Program
         garage.Sort(CompararObjetos);
         foreach (var item in garage)
         {
-            Console.WriteLine(item.ToString());
+            Console.WriteLine(item.GetCarInfo());
         }
 
 

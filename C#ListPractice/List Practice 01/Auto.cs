@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,17 @@ namespace List_Practice_01
             this.patente = patente;
             this.marca = marca;
             this.modelo = modelo;
+        }
+
+
+        public string GetCarInfo()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Informacion del Auto dentro del Garage");
+            sb.AppendLine($"Modelo: {modelo.ToString()}");
+            sb.AppendLine($"Patente: {patente.ToString()}");
+           
+            return sb.ToString();
         }
     }
 }
